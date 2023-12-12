@@ -87,11 +87,13 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 1em;
   font: inherit;
   vertical-align: baseline;
   border-color: none;
   border-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article,

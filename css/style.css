@@ -141,6 +141,10 @@ table {
   width: 2em;
 }
 
+.icon-menu {
+  color: black;
+}
+
 .first_section {
   margin: 0px 100px 0px 100px;
   display: flex;

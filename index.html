@@ -27,28 +27,37 @@
   <body>
     <!--Header-->
     <header class="main-header">
-      <nav class="nav-wrapper">
-        <div class="container">
-          <div class="col s12">
-            <a href="index.html" class="col s2 brand-logo">
-              <img
-                class="logo responsive-img center-align"
-                src="assets/logo.png"
-                alt="5M Agência"
-                title="5M Agência"
-              />
-            </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="#">Sass</a></li>
-              <li><a href="badges.html">Components</a></li>
-              <li><a href="collapsible.html">JavaScript</a></li>
-            </ul>
-          </div>
+      <nav class="transparent z-depth-1">
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo left">
+            <img
+              class="logo responsive-img center-align"
+              src="assets/logo.png"
+              alt="5M Agência"
+              title="5M Agência"
+            />
+          </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger right">
+            <i class="material-icons fa-solid fa-bars icon-menu"></i>
+          </a>
+          <!--Desktop Menu-->
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#" class="black-text">Sobre nós</a></li>
+            <li><a href="#" class="black-text">Serviços</a></li>
+            <li><a href="#" class="black-text">Trabalhos recentes</a></li>
+            <li><a class="waves-effect light-green accent-3 btn">Agendar uma reunião</a></li>
+          </ul>
+
+          <!--Mobile Menu-->
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="#" class="black-text">Sobre nós</a></li>
+            <li><a href="#" class="black-text">Serviços</a></li>
+            <li><a href="#" class="black-text">Trabalhos recentes</a></li>
+            <li><a href="#" class="black-text">Agendar uma reunião</a></li>
+          </ul>
         </div>
       </nav>
     </header>
-
-    <hr class="header_line" />
 
     <div class="first_section">
       <div class="box_text">
@@ -74,10 +83,19 @@
     <!--Contact-->
     <footer></footer>
 
+    <!--Link JQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <!--Link Materialize JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Animation Mobile Menu-->
     <script>
-      src =
-        "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js";
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
     </script>
   </body>
 </html>

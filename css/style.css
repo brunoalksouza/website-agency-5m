@@ -145,6 +145,12 @@ table {
   color: black;
 }
 
+.btn {
+  border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+}
+
 .first_section {
   margin: 0px 100px 0px 100px;
   display: flex;

@@ -1,35 +1,13 @@
-header{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .logo{
-    display: flex;
-    justify-content: center;
-    height: 50px;
+    width: 2em;
 }
 
-.nav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 50%;
-    cursor: pointer;
-}
-
-.contact_button{
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #3DDB76;
-    cursor: pointer;
-}
-
-.header_line{
-    width: 80%;
+.icon-menu{
     color: black;
-    background-color: black;
-    height: 0.5px;
-    margin-top: 20px;
+}
+
+.btn {
+    border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
 }

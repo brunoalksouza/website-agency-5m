@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/5m_s_back.png" type="image/x-icon" />
 
+    <!--Link CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+
     <!--Links de icons-->
     <link
       rel="stylesheet"
@@ -18,55 +21,68 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
 
-    <!--Link CSS-->
-    <link rel="stylesheet" href="scss/style.css" />
-
     <title>Index</title>
   </head>
 
   <body>
     <!--Header-->
-    <header>
-      <nav>
-        <div  >
-          <img src="assets/5m_c_back.png" alt="logo" />
-        </div>
-        <ul>
-          <li>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>About</a>
-          </li>
-          <li>
-            <a>Projects</a>
-          </li>
-        </ul>
-        <div class="box_contact_button">
-          <button class="contact_button">Agende uma reunião</button>
+    <header class="main-header">
+      <nav class="transparent z-depth-1">
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo left">
+            <img
+              class="logo responsive-img center-align"
+              src="assets/logo.png"
+              alt="5M Agência"
+              title="5M Agência"
+            />
+          </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger right">
+            <i class="material-icons fa-solid fa-bars icon-menu"></i>
+          </a>
+          <!--Desktop Menu-->
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#" class="black-text">Sobre nós</a></li>
+            <li><a href="#" class="black-text">Serviços</a></li>
+            <li><a href="#" class="black-text">Trabalhos recentes</a></li>
+            <li>
+              <a class="waves-effect light-green accent-3 btn">
+                <i class="material-icons left fa-brands fa-whatsapp"></i>
+                Agendar uma reunião
+              </a>
+            </li>
+          </ul>
+
+          <!--Mobile Menu-->
+          <ul class="sidenav" id="mobile-demo">
+            <li>
+              <a href="#" class="black-text">
+                <i class="material-icons left fa-solid fa-people-group black-text"></i>
+                Sobre nós
+              </a>
+            </li>
+            <li>
+              <a href="#" class="black-text">
+                <i class="material-icons left fa-solid fa-hands-holding-child black-text"></i>
+                Serviços
+              </a>
+            </li>
+            <li>
+              <a href="#" class="black-text">
+                <i class="material-icons left fa-solid fa-clock-rotate-left black-text"></i>
+                Trabalhos recentes
+              </a>
+            </li>
+            <li>
+              <a href="#" class="black-text">
+                <i class="material-icons left fa-brands fa-whatsapp black-text"></i>
+                Agendar uma reunião
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
-
-    <hr class="header_line"/>
-
-    <!--About Us-->
-    <div class="first_section">
-      <div class="box_text">
-        <h1>Agencia de mkt</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptatum, quibusdam, quia, quos voluptates voluptatem quod
-          voluptatibus doloribus quas quidem voluptate. Quisquam voluptatum,
-          quibusdam, quia, quos voluptates voluptatem quod voluptatibus
-          doloribus quas quidem voluptate.
-        </p>
-        <button class="contact_button">Agende uma reunião</button>
-      </div>
-      <div class="box_first_image">
-        <img class="first_image" src="assets/1_image.png" alt="logo" />
-      </div>
-    </div>
 
     <!--Services-->
 
@@ -75,9 +91,14 @@
     <!--Contact-->
     <footer></footer>
 
+    <!--Link JQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <!--Link Materialize JS-->
-    <script>
-      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scripts/animations.js"></script>
   </body>
 </html>
